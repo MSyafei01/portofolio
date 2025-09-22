@@ -115,6 +115,36 @@
             });
         });
 
+
+
+// DOM Content Loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize the application
+    initApp();
+});
+
+// Initialize Application
+function initApp() {
+    // Hide loading screen after content is loaded
+    setTimeout(() => {
+        document.querySelector('.loading-screen').classList.add('hidden');
+    }, 1500);
+    
+    // Initialize navigation
+    initNavigation();
+    
+    // Initialize animations
+    initAnimations();
+    
+    // Initialize contact form
+    initContactForm();
+    
+    // Initialize testimonials slider
+    initTestimonials();
+}
+
+
+
         // Animation on Scroll
         function animateOnScroll() {
             const elements = document.querySelectorAll('.project-card, .blog-card, .detail-item');
@@ -180,4 +210,11 @@
         // Initialize typing animation
         initTypingAnimation();
 
-        
+// Export functions for use in other modules
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = {
+        initApp,
+        initTypingAnimation,
+        animateOnScroll,
+    };
+}
