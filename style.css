@@ -449,6 +449,18 @@
             box-shadow: 0 5px 15px rgba(0, 217, 255, 0.3);
         }
 
+        /* Alternatif dengan SVG background */
+        .fab.fa-linktr {
+            background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTcgMTBIMTJWN0g3VjEwWk0xMiAxNEg3VjE3SDEyVjE0Wk0xOSAxMEgxNFY3SDE5VjEwWk0xNCAxNEgxOVYxN0gxNFYxNFpNNiA1SDE4QzE5LjEgNSAyMCA1LjkgMjAgN1YxN0MyMCAxOC4xIDE5LjEgMTkgMTggMTlINkM0LjkgMTkgNCAxOC4xIDQgMTdWN0M0IDUuOSA0LjkgNSA2IDVaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+        }
+
+
         /* Projects Section */
         .projects-grid {
             display: grid;
@@ -530,7 +542,18 @@
         }
 
         .project-tag {
-            background: rgba(0, 217, 255, 0.1);
+            background: rgba(7, 198, 232, 0.162);
+            color: var(--accent);
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            transition: var(--transition);
+        }
+
+        .project-tagx {
+            background: rgba(7, 226, 241, 0.929);
             color: var(--accent);
             padding: 5px 10px;
             border-radius: 20px;
@@ -544,6 +567,11 @@
             background: rgba(0, 217, 255, 0.3);
             transform: scale(1.05);
         }
+
+        .project-tagx:hover {
+            background: rgba(241, 235, 235, 0.954);
+            transform: scale(1.05);
+        }        
 
         /* Resume Section */
         .resume-content {
