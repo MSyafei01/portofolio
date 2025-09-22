@@ -179,3 +179,5 @@
         
         // Initialize typing animation
         initTypingAnimation();
+
+        
