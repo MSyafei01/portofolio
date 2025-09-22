@@ -1,13 +1,4 @@
-
-    //<!-- Scroll to Top Button -->
-    <div class="scroll-top">
-        <i class="fas fa-arrow-up"></i>
-    </div>
-
-    //<!-- Particles.js -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    
-
+// JavaScript for Portfolio Website
         // Initialize Particles.js
         particlesJS('particles-js', {
             particles: {
